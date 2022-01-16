@@ -9,5 +9,5 @@ urlpatterns = [
     path('', include(router.urls)),
     path('authe/', AuthList.as_view(), name='Token'),
     path(r'authors/', AuthorList.as_view()),
-    path(r'authors/<int:pk>/', AuthorRetrieve.as_view())
+    path(r'authors/<int:pk>/', AuthorRetrieve.as_view()),
 ]
